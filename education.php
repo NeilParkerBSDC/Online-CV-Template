@@ -11,13 +11,8 @@
 
 <h1>Education</h1>
 <?php 
+include "connect.php";
 include "navbar.php";
-//include connect.php;
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "mycv";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
