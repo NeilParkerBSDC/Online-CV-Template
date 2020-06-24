@@ -3,6 +3,7 @@
 <head>
 <title>My CV</title>
 <link rel="stylesheet" type="text/css" href="MyStyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
@@ -25,7 +26,11 @@ $sql = "SELECT * FROM `education_tbl`";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-  echo "<table  border=1><tr><th>Start</th><th>finish</th><th>Instituion</th><th>quals</th></tr>";
+  echo "&nbsp;</br>";
+  echo "I achieved the following qualifications from these institutions</br>";
+  echo "&nbsp;</br>";
+  
+  echo "<table  border=1 cellpadding=2 cellspacing=0 ><tr><th>Start</th><th>Finish</th><th>Instituion</th><th>Qualifications</th></tr>";
   // output data of each row
   while($row = $result->fetch_assoc()) {
     echo "<tr><td>".$row["StartDate"]."</td><td>".$row["EndDate"]."</td><td>".$row["Institution"]."</td><td>".$row["Qualifications"]."</td></tr>";
