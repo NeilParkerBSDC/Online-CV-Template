@@ -48,6 +48,16 @@
 	.topnav .icon {
 	  display: none;
 	}
+	table, th, td {
+	  border: 1px solid darkgreen;
+	  vertical-align: top;
+	}
+
+	th {
+		background-color: darkgreen;
+		color: lightgreen;
+		font-weight: bold;
+	}
 
 	.BoldTD {
 	  font-weight: bold;
@@ -106,6 +116,17 @@ body {
 	/* Hide the link that should open and close the topnav on small screens */
 	.topnav .icon {
 	  display: none;
+	}
+	
+	table, th, td {
+	  border: 1px solid darkgreen;
+	  vertical-align: top;
+	}
+
+	th {
+		background-color: darkgreen;
+		color: lightgreen;
+		font-weight: bold;
 	}
 
 	.BoldTD {
