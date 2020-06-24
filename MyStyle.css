@@ -1,0 +1,30 @@
+body {
+	color: #000000;
+	background-color: lightgreen;
+	font-family: "Verdana";
+}
+a {
+  color: yellow;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightgreen;
+  text-decoration: none;
+}
+
+nav {
+  background-color: darkgreen;
+  text-align: center;
+  font-weight: Bold;
+  font-size: 120%;
+  color: white;
+}
+
+.BoldTD {
+  font-weight: bold;
+  vertical-align: top;
+}
+.TDDetails {
+  vertical-align: top;
+}
