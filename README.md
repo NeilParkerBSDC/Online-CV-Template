@@ -1,8 +1,14 @@
-# L3Y1PSummerProject-CV
-Project to make a dynamic online CV
-Tis is some text but **this is in bold**
+# Online CV Template
+This Project provides the files to make a dynamic online CV
 
-## This is heading level 2
+# Planning
 
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
 
 
