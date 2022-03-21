@@ -28,7 +28,7 @@ It is proposed that a separate page be created for each of these. For the most p
 
 ## WebPages
 ***N.B. If there is no hyperlink, the file hasn't been produced/uploaded yet)***
-- [Index.php]() - Personal/contact details & Personal Statement. This does not need to be dynamically generated from a database as the details do not change much, and when they do they only need changing in this one place
+- [Index.php](https://github.com/NeilParkerBSDC/Online-CV-Template/blob/master/Index.php) - Personal/contact details & Personal Statement. This does not need to be dynamically generated from a database as the details do not change much, and when they do they only need changing in this one place
 - [connect.php](https://github.com/NeilParkerBSDC/Online-CV-Template/blob/master/connect.php) A file with the connection details for the dabase (needs customising to your details). This is in a separate file because it my be referenced in several php files that want to connect to the dataabse, and having one central file means any changes only need to be made in that file.
 - [navbar.php](https://github.com/NeilParkerBSDC/Online-CV-Template/blob/master/navbar.php) I have separated out the navigation into a spearate file, so that if it is ammended it only needs ammending on one place
 - [education.php](https://github.com/NeilParkerBSDC/Online-CV-Template/blob/master/education.php) (dynamically produiced table showing education/qualifications
