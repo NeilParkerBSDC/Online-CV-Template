@@ -32,7 +32,7 @@ It is proposed that a separate page be created for each of these. For the most p
 - [connect.php](https://github.com/NeilParkerBSDC/Online-CV-Template/blob/master/connect.php) A file with the connection details for the dabase (needs customising to your details). This is in a separate file because it my be referenced in several php files that want to connect to the dataabse, and having one central file means any changes only need to be made in that file.
 - [navbar.php](https://github.com/NeilParkerBSDC/Online-CV-Template/blob/master/navbar.php) I have separated out the navigation into a spearate file, so that if it is ammended it only needs ammending on one place
 - [education.php](https://github.com/NeilParkerBSDC/Online-CV-Template/blob/master/education.php) (dynamically produiced table showing education/qualifications
-- Work Experience (Employment history, but called here "*work experience*" because that is more approriate to a student just setting out on their career
+- [WEX.php](https://github.com/NeilParkerBSDC/Online-CV-Template/blob/master/WEX.php) - Work Experience (Employment history, but called here "*work experience*" because that is more approriate to a student just setting out on their career
 - Skills (A list of the skills/programming languages etc. you have)
 - Online Portfolio (links to evidence of projects completed/github etc.)
 
