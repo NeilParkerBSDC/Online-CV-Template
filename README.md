@@ -33,7 +33,7 @@ It is proposed that a separate page be created for each of these. For the most p
 - [navbar.php](https://github.com/NeilParkerBSDC/Online-CV-Template/blob/master/navbar.php) I have separated out the navigation into a spearate file, so that if it is ammended it only needs ammending on one place
 - [education.php](https://github.com/NeilParkerBSDC/Online-CV-Template/blob/master/education.php) (dynamically produiced table showing education/qualifications
 - [WEX.php](https://github.com/NeilParkerBSDC/Online-CV-Template/blob/master/WEX.php) - Work Experience (Employment history, but called here "*work experience*" because that is more approriate to a student just setting out on their career
-- [Skills.php](https://github.com/NeilParkerBSDC/Online-CV-Template/blob/master/Skills.php) Skills (A list of the skills/programming languages etc. you have)
+- [Skills.php](https://github.com/NeilParkerBSDC/Online-CV-Template/blob/master/Skills.php) - Skills (A list of the skills/programming languages etc. you have)
 - Online Portfolio (links to evidence of projects completed/github etc.)
 
 ## Styling
