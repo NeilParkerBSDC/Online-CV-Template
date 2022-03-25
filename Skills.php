@@ -33,7 +33,7 @@ if ($result->num_rows > 0) {
   echo "<table  border=1 cellpadding=2 cellspacing=0 ><tr><th>Skill_Name</th><th>Details</th></tr>";
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "<tr><td>".$row["Skill_Name"]."</td><td>".$row["Details"]."</td></tr>";
+    echo "<tr><td>".$row["SkillName"]."</td><td>".$row["Details"]."</td></tr>";
   }
   echo "</table>";
 } else {
