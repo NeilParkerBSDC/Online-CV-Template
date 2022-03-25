@@ -1,7 +1,8 @@
 -- 1) Create the database:
 CREATE DATABASE MyCV;
 
--- 2) Now within that  database create the tables you need. You will need to think about the datatypes and field sizes of the fields you are creating:
+-- 2) EDUCATION TABLE
+-- a) Now within that  database create the tables you need. You will need to think about the datatypes and field sizes of the fields you are creating:
 -- Education Table
 
 CREATE TABLE `mycv`.`education_tbl` 
@@ -13,11 +14,11 @@ CREATE TABLE `mycv`.`education_tbl`
 PRIMARY KEY (`Education_ID`)) 
 ENGINE = InnoDB;
 
---3) Add some data to your database. It is usually better to create a web form to make entering the data more user friendly ( a CRUD app), but you might want to get a few records into your database quickly for testing purposes (so the webpage has some data to look at).
+--b) Add some data to your education table. It is usually better to create a web form to make entering the data more user friendly ( a CRUD app), but you might want to get a few records into your database quickly for testing purposes (so the webpage has some data to look at).
 INSERT INTO education_tbl (StartDate, EndDate, Institution, Qualifications)
 VALUES ("Sept 2014", "July 2019", "My School", "GCSE Maths (7)<br/>GCSE English Lang (6)");
 
--- 4) if you want to update a field
+-- c) if you want to update a field
 UPDATE education_tbl
 SET Qualifications = 'GCSE Maths (7)<br/>GCSE English Lang (6)<br/>GCSE English Literature (6)<br/>GCSE Double Science (66)<br/>GCSE French (4)<br/>GCSE History (6)<br/>GCSE DT (7)<br/>GCSE PE (4)'
 WHERE Education_ID = 1;
@@ -25,7 +26,8 @@ WHERE Education_ID = 1;
 -- Note you could also have a separate table for qaulfications, and then have a relationship table linkning qualfications to an education institution,
 -- Becuase you may well gain several qualfications from a single instituiton
 
---5) Create a Work Experience table
+--3) WORK EXPERIENCE TABLE
+-- a) Create the Work Experience table
 
 CREATE TABLE `mycv`.`workExperience_tbl` 
 (`WEX_ID` INT NOT NULL AUTO_INCREMENT , 
@@ -35,6 +37,11 @@ CREATE TABLE `mycv`.`workExperience_tbl`
 `Duties` VARCHAR(4000) NOT NULL , 
 PRIMARY KEY (`WEX_ID`)) 
 ENGINE = InnoDB;
+
+-- b) Add some data to the table
+
+INSERT INTO workExperience_tbl (StartDate, EndDate, Employer, Duties)
+VALUES ("May 2019", "May 2019", "My School", "GCSE Maths (7)<br/>GCSE English Lang (6)");
 
 --6) Create a skills table
 
