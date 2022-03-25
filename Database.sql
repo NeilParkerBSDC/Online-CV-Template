@@ -85,5 +85,3 @@ ENGINE = InnoDB;
 
 -- b) Add some data:
 
-INSERT INTO skills_tbl (Skill_Name, Details,)
-VALUES ("Programming", "I have used the following programming languages at schools/college and in my work experience:<ul><li>Python</li><li>C#</li><li>HTML/CSS</li><li>PHP</li><li>MySQL</li>"),
