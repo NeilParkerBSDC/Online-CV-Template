@@ -18,7 +18,7 @@ A CV will typically have sections on the following:
 - Interests
 - Etc.
 
-It is proposed that a separate page be created for each of these. For the most part each page will have a corrsponding table in the dtaabase, although it would be good to be able to apply some relational linking of table e.g. skills and projects, skills amd qualifocayions etc.
+It is proposed that a separate page be created for each of these. For the most part each page will have a corresponding table in the database, although it would be good to be able to apply some relational linking of table e.g. skills and projects, skills and qualifications etc.
 
 # Files in this project
 
