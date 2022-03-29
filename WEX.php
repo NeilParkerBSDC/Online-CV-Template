@@ -22,7 +22,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM `workexperience_tbl`";
+$sql = "SELECT * FROM `workExperience_tbl`";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
