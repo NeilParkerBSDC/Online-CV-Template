@@ -44,14 +44,25 @@ It is proposed that a separate page be created for each of these. For the most p
 
 ```mermaid
 graph TD
+start((Start browsing))
 index(Index.php)
 navbar(Navbar.php)
-MyStyle(MyStyle.CSS)
-Database[(Database.SQL)]
+MyStyle[MyStyle.CSS]
+database[(Database.SQL)]
 connect(Connect.php)
-Skills(Skills.php)
+skills(Skills.php)
 WEX(WEX.php)
 education(education.php)
+
+start--> | Landing Page | index
+navbar --> | Feeds into | index
+Skills --> connect
+WEX --> connect
+education --> connect
+connect  <--> database
+
+
+
 ```
 
 # How to use this repository
