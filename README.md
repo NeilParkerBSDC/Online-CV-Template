@@ -40,6 +40,12 @@ It is proposed that a separate page be created for each of these. For the most p
 
 - [MyStyle.css](https://github.com/NeilParkerBSDC/Online-CV-Template/blob/master/MyStyle.css) - stylesheet
 
+# Site map
+
+```mermaid
+index(Index.php)
+```
+
 # How to use this repository
 
 You could just download or copy and paste the files, but you could also [fork the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
