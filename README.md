@@ -47,7 +47,7 @@ graph TD
 start((Start browsing))
 index(Index.php)
 navbar(Navbar.php)
-style[MyStyle.CSS]
+MyStyle[MyStyle.CSS]
 database[(Database.SQL)]
 connect(Connect.php)
 skills(Skills.php)
@@ -56,7 +56,7 @@ education(education.php)
 
 start--> | Landing Page | index
 navbar --> | Feeds into | index
-style --> | used by all pages | index
+MyStyle --> | used by all pages | index
 index --> skills
 index --> WEX
 index --> education
