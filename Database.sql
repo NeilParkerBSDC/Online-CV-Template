@@ -5,7 +5,7 @@ CREATE DATABASE MyCV;
 -- a) Now within that  database create the tables you need. You will need to think about the datatypes and field sizes of the fields you are creating:
 -- Education Table
 
-CREATE TABLE `mycv`.`education_tbl` 
+CREATE TABLE `MyCV`.`education_tbl` 
 (`Education_ID` INT NOT NULL AUTO_INCREMENT , 
 `StartDate` VARCHAR(255) , 
 `EndDate` VARCHAR(255) , 
@@ -14,22 +14,22 @@ CREATE TABLE `mycv`.`education_tbl`
 PRIMARY KEY (`Education_ID`)) 
 ENGINE = InnoDB;
 
---b) Add some data to your education table. It is usually better to create a web form to make entering the data more user friendly ( a CRUD app), but you might want to get a few records into your database quickly for testing purposes (so the webpage has some data to look at).
-INSERT INTO education_tbl (StartDate, EndDate, Institution, Qualifications)
+-- b) Add some data to your education table. It is usually better to create a web form to make entering the data more user friendly ( a CRUD app), but you might want to get a few records into your database quickly for testing purposes (so the webpage has some data to look at).
+INSERT INTO MyCV.education_tbl (StartDate, EndDate, Institution, Qualifications)
 VALUES ("Sept 2014", "July 2019", "My School", "GCSE Maths (7)<br/>GCSE English Lang (6)");
 
 -- c) if you want to update a field
-UPDATE education_tbl
+UPDATE MyCV.education_tbl
 SET Qualifications = 'GCSE Maths (7)<br/>GCSE English Lang (6)<br/>GCSE English Literature (6)<br/>GCSE Double Science (66)<br/>GCSE French (4)<br/>GCSE History (6)<br/>GCSE DT (7)<br/>GCSE PE (4)'
 WHERE Education_ID = 1;
 
 -- Note you could also have a separate table for qaulfications, and then have a relationship table linkning qualfications to an education institution,
 -- Becuase you may well gain several qualfications from a single instituiton
 
---3) WORK EXPERIENCE TABLE
+-- 3) WORK EXPERIENCE TABLE
 -- a) Create the Work Experience table
 
-CREATE TABLE `mycv`.`workExperience_tbl` 
+CREATE TABLE `MyCV`.`workExperience_tbl` 
 (`WEX_ID` INT NOT NULL AUTO_INCREMENT , 
 `StartDate` VARCHAR(255) , 
 `EndDate` VARCHAR(255) , 
@@ -40,7 +40,7 @@ ENGINE = InnoDB;
 
 -- b) Add some data to the table
 
-INSERT INTO workExperience_tbl (StartDate, EndDate, Employer, Duties)
+INSERT INTO MyCV.workExperience_tbl (StartDate, EndDate, Employer, Duties)
 VALUES ("May 2019", "May 2019", "Smith and Jones Accountants", "<strong>Y10 Work Experience Placement</strong><br/>
 Helping with filing and basic office tasks"),
 ("April 2020", "July 2020", "Sue Grabbit & Run, Solicitors", "<strong>Technology Assistant</strong><br/>
@@ -49,11 +49,11 @@ Helping set up and troubleshoot video conferencing facilities for remote meeting
 ("September 2021", "February 2022", "Barton Rovers Football Club", "<strong>Redeveloping Website</strong><br/> See <a href=\"http://www.thisIsAURL.com\">Github Repository");
 
 
---4) Skills
+-- 4) Skills
 
 -- a) Create the TABLE table
 
-CREATE TABLE `mycv`.`skills_tbl` 
+CREATE TABLE `MyCV`.`skills_tbl` 
 (`Skill_ID` INT NOT NULL AUTO_INCREMENT , 
  `SkillName` VARCHAR(100) NOT NULL ,
 `Details` VARCHAR(4000) NOT NULL , 
@@ -61,7 +61,7 @@ PRIMARY KEY (`Skill_ID`))
 ENGINE = InnoDB;
 
 -- b) Add some data:
-INSERT INTO skills_tbl (SkillName, Details)
+INSERT INTO MyCV.skills_tbl (SkillName, Details)
 VALUES ("Programming", "I have used the following programming languages at schools/college and in my work experience:<ul><li>Python</li><li>C#</li><li>HTML/CSS</li><li>PHP</li><li>MySQL</li>"),
 ("Non-Programming Skills", "I also have other non-programming skills including:<ul><li>Communcation</li><li>Working in a Team</li><li>Leadershipt</li><li>Problem solving</li><li>Creativity</li>");
 
@@ -75,7 +75,7 @@ VALUES ("Programming", "I have used the following programming languages at schoo
 -- Note that this could use a much mre complicated structure, this is the simplest I could get it, without falling back onto a static html page
 
 -- a) Create the table
-CREATE TABLE `mycv`.`portfilio_tbl` 
+CREATE TABLE `MyCV`.`portfilio_tbl` 
 (`Portfolio_ID` INT NOT NULL AUTO_INCREMENT , 
  `PortfolioTitle` VARCHAR(100) NOT NULL ,
  `PortfolioSummary` VARCHAR(300) NOT NULL ,
@@ -84,4 +84,3 @@ PRIMARY KEY (`Portfolio_ID`))
 ENGINE = InnoDB;
 
 -- b) Add some data:
-
