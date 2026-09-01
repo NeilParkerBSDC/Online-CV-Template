@@ -72,3 +72,9 @@ connect  <--> database
 # How to use this repository
 
 You could just download or copy and paste the files, but you could also [fork the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+
+1) From XAMPP launch PHPMyAdmin
+2) Copy and Paste the DatabaseSQL file into the SQL Tab on PHPMyAdmin
+3) Create a folder on the Localhost location in your XAMPP installation (httdocs)
+4) Copy each of these files into the folder you have crated on your localhost on your XAMPP Installation (httdocs): INdex.php, MyStyle.CSS, Skills, PHP, WEX.PHP, Connect.PHP, Education.PHP, navbar.PHP
+5) Launch Localhost and browse to  the folder you have created
