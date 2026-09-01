@@ -44,26 +44,29 @@ It is proposed that a separate page be created for each of these. For the most p
 
 ```mermaid
 graph TD
-start((Start browsing))
-index(Index.php)
-navbar(Navbar.php)
-MyStyle[MyStyle.CSS]
-database[(Database.SQL)]
-connect(Connect.php)
-skills(Skills.php)
-WEX(WEX.php)
-education(education.php)
+    start((Start browsing))
+    index("Index.php")
+    navbar("Navbar.php")
+    MyStyle["MyStyle.CSS"]
+    database[("Database.SQL")]
+    connect("Connect.php")
+    skills("Skills.php")
+    WEX("WEX.php")
+    education("education.php")
 
-start--> | Landing Page | index
-navbar --> | Feeds into | index
-MyStyle --> | used by all pages | index
-index --> skills
-index --> WEX
-index --> education
-skills --> connect
-WEX --> connect
-education --> connect
-connect  <--> database
+    start --> | Landing Page | index
+    navbar --> | Feeds into | index
+    MyStyle --> | used by all pages | index
+    index --> skills
+    index --> WEX
+    index --> education
+    skills --> connect
+    WEX --> connect
+    education --> connect
+    
+    %% Fixed bidirectional relationship using two standard arrows
+    connect --> database
+    database --> connect
 
 ```
 
