@@ -43,6 +43,7 @@ It is proposed that a separate page be created for each of these. For the most p
 # Site map
 
 ```mermaid
+graph TD
 index(Index.php)
 ```
 
