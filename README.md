@@ -108,7 +108,7 @@ Before starting, make sure you have:
 
 Navigate to your XAMPP web server folder:
 
-```text
+
 C:\xampp\htdocs\
 
 
