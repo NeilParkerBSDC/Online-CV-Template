@@ -56,7 +56,10 @@ education(education.php)
 
 start--> | Landing Page | index
 navbar --> | Feeds into | index
-Skills --> connect
+index --> skills
+index --> WEX
+index --> education
+skills --> connect
 WEX --> connect
 education --> connect
 connect  <--> database
