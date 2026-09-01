@@ -45,6 +45,13 @@ It is proposed that a separate page be created for each of these. For the most p
 ```mermaid
 graph TD
 index(Index.php)
+navbar(Navbar.php)
+MyStyle(MyStyle.CSS)
+Database{(Database.SQL)]
+connect(Connect.php)
+Skills(Skills.php)
+WEX(WEX.php)
+education(education.php)
 ```
 
 # How to use this repository
