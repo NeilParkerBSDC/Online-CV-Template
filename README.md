@@ -71,10 +71,133 @@ connect  <--> database
 
 # How to use this repository
 
-You could just download or copy and paste the files, but you could also [fork the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+You can either:
 
-1) From XAMPP launch PHPMyAdmin
-2) Copy and Paste the DatabaseSQL file into the SQL Tab on PHPMyAdmin
-3) Create a folder on the Localhost location in your XAMPP installation (httdocs)
-4) Copy each of these files into the folder you have crated on your localhost on your XAMPP Installation (httdocs): INdex.php, MyStyle.CSS, Skills, PHP, WEX.PHP, Connect.PHP, Education.PHP, navbar.PHP
-5) Launch Localhost and browse to  the folder you have created
+- Download the files and copy them into your XAMPP web server folder, or
+- Fork the repository to create your own copy on GitHub.
+
+If you are unsure how to fork a repository, see the GitHub guide:
+
+https://docs.github.com/en/get-started/quickstart/fork-a-repo
+
+---
+
+## Prerequisites
+
+Before starting, make sure you have:
+
+- XAMPP installed
+- Apache running in XAMPP
+- MySQL running in XAMPP
+- A web browser (Chrome, Edge, Firefox etc.)
+
+
+## Step 1: Create the Database
+
+1. Open the **XAMPP Control Panel**.
+2. Start **Apache** and **MySQL**.
+3. Click the **Admin** button next to MySQL (or browse to http://localhost/phpmyadmin).
+4. Click the **SQL** tab.
+5. Open the file **Database.sql** from this repository.
+6. Copy and paste the contents into the SQL window.
+7. Click **Go** to create the database and tables.
+
+---
+
+## Step 2: Create a Website Folder
+
+Navigate to your XAMPP web server folder:
+
+```text
+C:\xampp\htdocs\
+
+
+Create a new folder for your website, for example:
+
+C:\xampp\htdocs\MyCV\
+
+## Step 3: Copy the Project Files
+
+Copy the following files into your new folder:
+
+- Index.php
+- MyStyle.css
+- Skills.php
+- WEX.php
+- connect.php
+- Education.php
+- navbar.php
+
+You should also copy any additional files provided in future updates of the project.
+
+## Step 4: Configure the Database Connection
+
+Open:
+
+connect.php
+
+
+Check that the database settings match your XAMPP installation.
+
+For a default XAMPP installation they will usually be:
+```php
+$servername = "localhost";
+$username = "root";
+$password = "";
+```
+
+
+If your database name is different, update the $dbname variable accordingly.
+
+## Step 5: View the Website
+
+Open your web browser and navigate to:
+
+http://localhost/MyCV/
+
+
+Replace MyCV with the name of the folder you created in Step 2.
+
+For example:
+
+http://localhost/Online-CV-Template/
+
+
+Your online CV website should now load.
+
+Customising Your CV
+
+Edit the content to create your own online CV and portfolio.
+
+You may wish to customise:
+
+- Personal details
+- Personal statement
+- Qualifications
+- Skills
+- Work experience
+- Projects
+- Achievements
+- Portfolio links
+- Interests
+
+## Troubleshooting
+### Page Not Found
+
+Check that:
+
+- Apache is running in XAMPP.
+- Your project folder is inside: C:\xampp\htdocs\
+- You have typed the correct URL in your browser.
+
+### Database Connection Error
+
+Check that:
+
+- MySQL is running in XAMPP.
+- The database was created successfully.
+- The settings in connect.php are correct.
+- Blank Page
+
+A PHP error may have occurred. Check your code carefully and ask your tutor for help if required.
+
