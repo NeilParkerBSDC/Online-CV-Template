@@ -65,8 +65,6 @@ WEX --> connect
 education --> connect
 connect  <--> database
 
-
-
 ```
 
 # How to use this repository
