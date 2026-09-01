@@ -47,7 +47,7 @@ graph TD
 index(Index.php)
 navbar(Navbar.php)
 MyStyle(MyStyle.CSS)
-Database{(Database.SQL)]
+Database[(Database.SQL)]
 connect(Connect.php)
 Skills(Skills.php)
 WEX(WEX.php)
